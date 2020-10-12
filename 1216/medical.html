@@ -1,0 +1,372 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <meta charset = "UTF-8" />
+    <title>預立醫療</title>
+    
+    <style type = "text/css">
+    #all{
+        overflow: hidden;
+    }
+    #top{position:absolute;left:1000px;top:30px}
+    ul,ol{margin:0px;padding:0px;list-style-type: none}
+    #top{width:400px;height: 50px}
+    #top ul li{float:left;line-height:40px;padding:0px 15px;position:relative;}
+    #top ul li .owrap{position:absolute;width:150px;display:none;background-color: #E4B246;text-align:left;}
+    #top ul li ol li{float:none;line-height:40px;padding:0px}
+    #top ul li:hover .owrap{display:block }
+    a{color:white;font-size:20px;text-decoration: none}
+    a:hover{color:red}
+    #img1{width:1100px;position:absolute;left:150px;top:150px}
+    #topest{background-color:#E4B246;position:absolute;width:100%;height:100px;top:0px;left:0px}
+    #logo{width:200px;height:100px}
+    #second{position:absolute;left:0px;top:1700px;width:auto}
+    #line{padding:5px 200px 300px;width:1000px;height:20px}
+    #line2{padding:5px 200px 300px;width:1000px;height:20px}
+    p1{padding:30px 250px;font-size:50px;color:#E4B246}
+    p{font-size:24px;text-align: center;padding:10px auto auto auto;}
+    #secondp{margin:-300px 20px 80px -50px}
+    #img{width:1000px;height:400px;}
+    #third{margin:10px 30px 10px 600px}
+    #fourth{margin:10px 30px 10px 650px}
+    #fifth{margin:10px 30px 10px 5px;color:#E4B246 }
+    #seven{margin:10px 20px 10px 600px}
+    #button{margin:10px 20px 10px 450px}
+    #change{margin:10px 20px 10px 200px}
+    #how{margin:10px 20px 10px 250px}
+    #what{margin:10px 20px 10px 50px}
+    #img100{width:500px;height:300px}
+    #hos{margin:-300px  20px 100px 150px}
+    #red{width:1200px ;height:500px}
+    body{background-image:url("https://i.imgur.com/HtJ26pJ.gif");
+    font-family: fantasy;
+    
+    }
+    #QA{width:1400px;height:200px}
+    #self{width:200px}
+    #five{width:200px}
+    #who{width:250px}
+    #whod{margin:-100px 20px 200px 400px}
+    #askd{margin:-380px 20px 200px 900px}
+    #ask{width:240px}
+    #pp{margin:50px  20px 100px -20px}
+    #buttom{margin:-100px 20px 200px 60px}
+    #question{background-color:#E4B246;margin:-200px 20px 200px 10px;font-family: fantasy;}
+    #question2{background-color:#E4B246;margin:-200px 20px 200px 10px;font-family: fantasy;}
+    #question3{background-color:#E4B246;margin:-200px 20px 200px 10px;font-family: fantasy;}
+    #question4{background-color:#E4B246;margin:-200px 20px 200px 10px;font-family: fantasy;}
+    #answer{margin:-150px 20px 200px 10px;display:none;font-family: fantasy;}
+    #answer2{margin:-150px 20px 200px 10px;display:none;font-family: fantasy;}
+    #answer3{margin:-150px 20px 200px 10px;display:none;font-family: fantasy;}
+    #answer4{margin:-150px 20px 200px 10px;display:none;font-family: fantasy;}
+    #btn1{width:150px;height:70px}
+    #btn2{width:150px;height:70px}
+    #btn3{width:150px;height:70px}
+    #last{height:400px;color:white;background-color:orange} 
+    #homepagediv{width:130px;margin:100px 20px 200px 300px}
+    #tracediv{width:120px;margin:-460px 20px 200px 620px} 
+    #morediv{width:150px;margin:-360px 20px 200px 950px} 
+    #topp {
+        
+        z-index: 1;
+            position: fixed;
+            right: 10;
+            bottom: 0;
+        }
+@keyframes righteaseinAnimate{
+    0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-ms-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+.company_introduce:hover{
+    animation: righteaseinAnimate 5s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: righteaseinAnimate 5s ease 1;
+    -moz-animation: righteaseinAnimate 5s ease 1;
+    -ms-animation: righteaseinAnimate 5s ease 1;
+    -o-animation: righteaseinAnimate 5s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+.company_introduce1:hover{
+    animation: righteaseinAnimate 5s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1S，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: righteaseinAnimate 5s ease 1;
+    -moz-animation: righteaseinAnimate 5s ease 1;
+    -ms-animation: righteaseinAnimate 5s ease 1;
+    -o-animation: righteaseinAnimate 5s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+    </style>
+    <script type="text/javascript">
+    function get_num(num)
+    {
+        document.getElementById('img').src = "https://i.imgur.com/"+num+".png";
+    }
+    function get_ACPnum(num)
+    {
+        document.getElementById('img100').src = "ACP_"+num+".png";
+    }
+    function list1()
+    {
+        var question = document.getElementById('question');
+        var answer = document.getElementById('answer');
+        if (answer.style.display === 'none')
+        {
+            answer.style.display = 'block';
+        } 
+        else 
+        {
+             answer.style.display = 'none';
+        }
+    }
+    function list2()
+    {
+        var question2 = document.getElementById('question2');
+        var answer2 = document.getElementById('answer2');
+        if (answer2.style.display === 'none')
+        {
+            answer2.style.display = 'block';
+        } 
+        else 
+        {
+             answer2.style.display = 'none';
+        }
+    }
+    function list3()
+    {
+        var question3 = document.getElementById('question3');
+        var answer3 = document.getElementById('answer3');
+        if (answer3.style.display === 'none')
+        {
+            answer3.style.display = 'block';
+        } 
+        else 
+        {
+             answer3.style.display = 'none';
+        }
+    }
+    function list4()
+    {
+        var question4 = document.getElementById('question4');
+        var answer4 = document.getElementById('answer4');
+        if (answer4.style.display === 'none')
+        {
+            answer4.style.display = 'block';
+        } 
+        else 
+        {
+             answer4.style.display = 'none';
+        }
+    }
+    </script>
+    </head>
+    <body> 
+        <font face="微軟正黑體">
+    <div id = "all">
+    <div id = "topest"><img src = "https://i.imgur.com/7D4pd4e.png" id = "logo">     
+        <div id = "top">
+            <ul>
+                <li><a href = "#">首頁</a>
+                    <div class = "owrap">
+                        <ol>
+                            <li><a href = "01.html">List1</a></li>
+                            <li><a href = "02.html">List2</a></li>
+                            <li><a href = "03.html">List3</a></li>
+                            <li><a href = "04.html">List4</a></li>
+                            <li><a href = "05.html">List5</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li><a href = "medical.html">預立醫療</a>
+                    <div class = "owrap">
+                            <ol>
+                                <li><a href = "home.html">病主法</a></li>
+                                <li><a href = "18.html">五種臨床條件</a></li>
+                                <li><a href = "demo.html">你可以找誰陪同</a></li>
+                                <li><a href = "1.html">預立醫療諮商</a></li>
+                            </ol>
+                        </div> 
+                </li>
+                <li><a href = "organ.html">器官捐贈</a>
+                </li>
+                <li><a href = "a.html">預立遺囑</a></li>
+            </ul>
+        </div>
+    </div>  
+    <br/> 
+    </body> 
+    <br/>
+    <div id = "t">
+    <img src = "ACP_1.png" id = "img1">
+</div>   
+    <br/>
+    <div id = "second">
+        <div class="company">
+        <p1 class="company_introduce">醫生拿出了什麼讓兩邊的結局不一樣呢？ </p1></div>
+        <img src = "https://i.imgur.com/AVNaskh.png" id = "line">
+        <br/>
+        <div id = "secondp">
+            <p>答案是「預立醫療決定書」</p>
+            <p>你是否有想過，有一天你突然重病昏迷不醒，成功救活也會變植物人，你還要不要救?</p>
+            <p>你是否有想過</p>
+            <p>有一天你突然重病昏迷不醒，子女小心翼翼的揣測你的心意，和對方怒目相向，要救不救進退兩難的時候，昏迷的你要怎麼發言?</p>
+            <br/></div>
+            <div id = "change">
+                <img id = "img" src = "https://i.imgur.com/qjJ9v7N.png">
+            </div>
+            <br/>
+            <div id = "button">
+                <button onclick = "get_num('qjJ9v7N')"><img src = "https://i.imgur.com/qjJ9v7N.png" id = "btn1"></button>
+                <button onclick = "get_num('ZvJosQk')"><img src = "https://i.imgur.com/ZvJosQk.png" id = "btn2"></button>
+                <button onclick = "get_num('augvUUR')"><img src = "https://i.imgur.com/augvUUR.png" id = "btn3"></button>
+            </div>    
+            <br/>
+            <div id = "pp">
+            <p>隨著時代的進步，人們漸漸了解到每個生命都是獨一無二的，每個人的價值觀更需要受尊重且被保障，因此台灣於108年1月6日</p>
+            <p>開始實施《病人自主權利法》，用法律來保障人們的權益，讓病人有對自己病情的知情權以及最後醫療的決定權，因此當你在健康</p>
+            <p>且意識清楚時有簽署預立醫療決定書的話，它就能在你最後意識昏迷，無法表達清楚時替你發言。我們總是希望自己的人生有萬全的</p>
+            <p>準備和最好的安排，就算到了生命的盡頭不應該也如此嗎，現在，就來為人生中最後一次的醫療做準備吧!!</p>
+            </div>
+            <br/>
+            <div id = "third">
+                <a href = "home.html"><img src = "https://i.imgur.com/nJZWIMW.png" id = "self"></a>
+            </div>
+            <br/>
+            <div id = "what">
+            <p1 class="company_introduce1">到底什麼是「預立醫療決定書」呢?</p1>
+            <img src = "https://i.imgur.com/AVNaskh.png" id = "line2">
+            </div>
+            <br/>
+            <div id = "secondp">
+                <p>「預立醫療決定書(Advance Decision, AD)」是意願人經過「預立醫療照護諮商 (Advance Care Planning, ACP) 」後，</p>
+                <p>清楚瞭解《病人自主權利法》規定內容，預先表達，在符合特定臨床條件的情況下，</p>
+                <p>接受或拒絕維持生命治療、人工營養及流體餵養的正式書面文件。</p>
+                <div id = "fourth">
+                    <img src = "https://i.imgur.com/0CSMpTf.png">
+                </div>  
+                <div id = "fifth">
+                    <p>掃描觀看「預立醫療決定書」</p>
+                </div>   
+                <br/>
+                    <p>未來某天如果你發生了五種臨床條件其中的狀況，治療你的醫生，就會在以下三件事上尊重你自己的選擇：</p>
+                    <p>(1) 要不要《維持生命治療》：
+                    為任何有可能延長病人生命之必要醫療措施，例如</p>
+                    <p>1.心肺復甦術  2.機械式維生系統  3.血液製品 4.為特定疾病而設之專門治療 5.重度感染時所給予之抗生素等</p> 
+                    <p>(2) 要不要《人工營養及流體餵養》：所謂人工營養及流體餵養就是「透過導管或其他侵入性措施餵養食物與水分」，</p>
+                            <p>例如有鼻胃管、胃造口、靜脈注射</p>
+                    <div id = "seven">
+                        <a href = "18.html"><img src = "https://i.imgur.com/E9l0A8g.png" id = "five"></a>
+                    </div>
+                    <div id = "how">
+                    <p1>如何簽署預立醫療決定書？</p1>
+                    </div>
+                    <img src = "https://i.imgur.com/AVNaskh.png" id = "line2">
+                    <br/>
+                    <div id = "hos">
+                        <img src = "https://i.imgur.com/WW8TzFH.png" id = "red">
+                    </div>
+                    <br/>
+                    <div id = "whod">
+                        <a href = "demo.html"><img src = "https://i.imgur.com/Cwzt5Zw.png" id = "who"></a>
+                    </div>
+                    <div id = "askd">
+                            <a href = "1.html"><img src = "https://i.imgur.com/v7duWs4.png" id = "ask"></a>
+                        </div>
+                    <br/>
+                    <div id = "buttom">
+                        <img src = "https://i.imgur.com/l4fmWOU.png" id = "QA">
+                    </div>
+                    <br/>
+                    <div id = "question" onclick = "list1()" border = "5px solid black">
+                        <p>Q：如果我簽了「預力醫療決定（ＡＤ）」，會不會影響我的醫療照護品質？</p>
+                    </div>
+                    <div id = "answer" display = "none">
+                        <p>A：不會！只有在五種特定臨床條件發生時，你的「預立醫療決定」才會啟動與被執行，在那之前，該有的醫療療程都不會少</p>
+                    </div>
+                    <br/>
+                    <div id = "question2" onclick = "list2()" border = "5px solid black">
+                            <p>Q：如果我參加「預立醫療諮商（ＡＣＰ）」，一定要簽署「預立醫療決定（ＡＤ）」嘛？</p>
+                        </div>
+                        <div id = "answer2" display = "none">
+                            <p>A：不一定，不需要有壓力，不過經過這樣自己跟親友一起思考、探索生命議題的過程是很有意義的＾＾
+                                </p>
+                        </div>
+                        <br/>
+                        <div id = "question3" onclick = "list3()" border = "5px solid black">
+                                <p>Q：病主法是安樂死嗎？
+                                    </p>
+                            </div>
+                            <div id = "answer3" display = "none">
+                                <p>A：不是！是為尊重病人意願，不強加醫療措施延長生命，安樂死是加工縮短生命，兩者不一樣。
+                                    </p>
+                            </div>
+                            <br/>
+                            <div id = "question4" onclick = "list4()" border = "5px solid black">
+                                    <p>Q：我是單身、獨居、跟家人已沒有聯絡、家人沒空檔或喪親等原因，沒有親屬可陪同參加，</p>
+                                    <p>可以做「預立醫療照護諮商（ACP）」嗎？</p>
+                                </div>
+                                <div id = "answer4" display = "none">
+                                    <p>A：可以，只要您提出二親等內親屬事實上無法出席之事由，或是無法期待參與之書面說明，仍是可以做的。
+                                        </p><p>但「預立醫療照護諮商」的意義，有部分是希望協助您的家屬知悉並尊重您的意願及決定，</p>
+                                        <p>所以還是希望盡可能的邀請他們一起參加。</p>
+                                </div>
+                                <br/>
+                                <div id = "last">
+                                        <div id = "homepagediv">
+                                            <p><a href = "test6.html">首頁</a></p>
+                                            <hr/>
+                                            <p><a href = "test6.html">代辦小便條</a></p>
+                                            <p><a href = "medical.html">代辦事項一</a></p>
+                                            <p><a href = "organ.html">代辦事項二</a></p>
+                                            <p><a href = "a.html">代辦事項三</a></p>                                                  
+                                        </div>
+                                        <div id = "tracediv">
+                                                <p><a href = "#">追蹤待辦事項</a></p>
+                                                <hr/>
+                                                <p><a href = "#">臉書</a></p>
+                                                <p><a href = "#">Instagram</a></p>                                               
+                                        </div>
+                                        <div id = "morediv">
+                                                <p><a href = "#">更多相關網站</a></p>
+                                                <hr/>
+                                                <p><a href = "#">衛生福利部</a></p>
+                                                <p><a href = "#">中華器官捐贈協會</a></p>
+                                                <p><a href = "#">安寧照顧基金會</a></p>
+                                                <p><a href = "#">生命咖啡館</a></p>                                               
+                                        </div>        
+                                    </div>
+        </div>
+    </div>
+    <div id="topp">
+    <a href="#topest">
+        <img src="https://i.imgur.com/nc82yGi.png"width="60";height="70";>
+    </a>
+</div>
+</div>
+</font>
+</html>

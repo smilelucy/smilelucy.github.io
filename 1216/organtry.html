@@ -1,0 +1,820 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <meta charset = "UTF-8" />
+    <title>器官捐贈</title>
+    <style type = "text/css">
+    #top{position:absolute;left:1000px;top:30px;}
+    ul,ol{margin:0px;padding:0px;list-style-type: none}
+    #top{width:400px;height: 50px;}
+    #top ul li{float:left;line-height:40px;padding:0px 15px;position:relative;}
+    #top ul li .owrap{position:absolute;width:150px;display:none;background-color: #E4B246;text-align:left}
+    #top ul li ol li{float:none;line-height:40px;padding:0px}
+    #top ul li:hover .owrap{display:block }
+    a{color:white;font-size:20px;text-decoration: none}
+    a:hover{color:red}
+    #img1{width:1100px;position:absolute;left:150px;top:150px}
+    #topest{background-color:#E4B246;position:absolute;width:100%;height:100px;top:0px;left:0px}
+    #logo{width:200px;height:100px}
+    #second{position:absolute;left:0px;top:1700px;width:auto}
+    body{background-image:url("https://i.imgur.com/HtJ26pJ.gif");
+    font-family: fantasy;}
+    #pic{margin:200px 20px 10px 300px}
+    #button{margin:50px 20px 10px 160px}
+    #linepic1{width:1000px;height:20px}
+    #line1{margin:50px 20px 10px 280px}
+    #p1{width:1000px;margin:50px 20px 10px 280px;font-size:25px}
+    #girl{width:600px;height:700px}
+    #grl{margin:50px 20px 10px 400px}
+    #od1{margin:-700px 20px 10px 850px}
+    #eyepic{width:150px;height:70px}
+    #eye{margin:-110px 20px 10px 1010px}
+    #eyep{margin:30px 20px 10px 1060px}
+    #eyep p{font-size:20px}
+    #od2{margin:30px 20px 10px 900px}
+    #kidneypic{width:150px;height:70px}
+    #kidney{margin:-110px 20px 10px 1060px}
+    #kidneyp{margin:30px 0px 10px 1120px}
+    #kidneyp p{font-size:20px}
+    #od3{margin:30px 20px 10px 800px}
+    #pancreaspic{width:150px;height:70px}
+    #pancreas{margin:-110px 20px 10px 960px}
+    #pancreasp{margin:30px 0px 10px 1020px}
+    #pancreasp p{font-size:20px}
+    #od4{margin:30px 20px 10px 800px}
+    #intestinepic{width:100px;height:70px}
+    #intestine{margin:-110px 20px 10px 980px}
+    #intestinep{margin:30px 0px 10px 1020px}
+    #intestinep p{font-size:20px}
+    #od5{margin:-700px 20px 10px 270px}
+    #heartpic{width:150px;height:70px}
+    #heart{margin:-110px 20px 10px 250px}
+    #heartp{margin:30px 20px 10px 300px}
+    #heartp p{font-size:20px}
+    #od6{margin:100px 20px 10px 200px}
+    #lungpic{width:150px;height:70px}
+    #lung{margin:-110px 20px 10px 190px}
+    #lungp{margin:30px 0px 10px 240px}
+    #lungp p{font-size:20px}
+    #od7{margin:100px 20px 10px 300px}
+    #liverpic{width:150px;height:70px}
+    #liver{margin:-110px 20px 10px 290px}
+    #liverp{margin:30px 0px 10px 340px}
+    #liverp p{font-size:20px}
+    #linepic2{width:1000px;height:20px}
+    #line2{margin:-50px 20px 10px 250px}
+    #whocan{margin:50px 20px 10px 490px}
+    #whocan p{font-size:50px;color:#E4B246}
+    #p2{width:1000px;margin:50px 20px 10px 260px;font-size:25px}
+    #linepic3{width:1000px;height:20px}
+    #line3{margin:-50px 20px 10px 260px}
+    #when{margin:50px 20px 10px 460px}
+    #when p{font-size:50px;color:#E4B246}
+    #p3{width:1000px;margin:50px 20px 10px 260px;font-size:25px}
+    #brainpic{width:300px;height:200px}
+    #factorpic{width:300px;height:250px}
+    #equalpic{width:300px;height:180px}
+    #braindiv{margin:50px 20px 10px 210px}
+    #factordiv{margin:-220px 20px 10px 590px}
+    #equaldiv{margin:-230px 20px 10px 960px}
+    #linepic4{width:1000px;height:20px}
+    #line4{margin:-50px 20px 10px 260px}
+    #whocandeal{margin:50px 20px 10px 530px}
+    #whocandeal p{font-size:50px;color:#E4B246}
+    #p4{width:1000px;margin:50px 20px 10px 200px;font-size:25px}
+    #organfamdiv{margin:50px 20px 10px -20px;}
+    #teasuediv{margin:-280px 20px 10px 530px;}
+    #linepic5{width:1000px;height:20px}
+    #line5{margin:-50px 20px 10px 260px}
+    #howcandeal{margin:50px 20px 10px 530px}
+    #howcandeal p{font-size:50px;color:#E4B246}
+    #p4{width:1000px;margin:50px 20px 10px 260px;font-size:25px}
+    #organfampic{margin:50px 20px 10px 50px}
+    #teasuepic{margin:40px 20px 10px 100px}
+    #yesprintdiv{margin:50px 20px 10px 280px}
+    #noprintdiv{margin:-155px 20px 10px 980px}
+    #content{display:none;font-size:20px;color:rgba(155, 74, 20, 0.89);margin:0px 20px 10px 250px;width:20000px}
+    #content2{display:none;font-size:20px;color:rgba(155, 74, 20, 0.89);margin:0px 20px 10px 850px}
+    #content3 {
+            /* border:green 1px solid; */
+        width:750px;
+    }
+    #content4 {
+        /* border:purple 5px solid; */
+        width:750px;
+    }
+    #img{width:1000px;height:400px}
+    #done{margin:-5px 20px 10px 40px}
+    #big{width:20000px}
+    #first{width:1000px}
+    #secondd{width:1000px}
+    #buttonnn{margin:-110px 20px 10px 210px}
+    #buttonnnn{margin:-110px 20px 10px 850px}
+    #youaskpic{width:1400px;margin:0px 0px 0px 60px}
+    #question{background-color:#E4B246;margin:0px 20px 200px 10px;font-size:25px;width:1400px}
+    #question2{background-color:#E4B246;margin:-200px 20px 200px 10px;font-size:25px;width:1400px}
+    #question3{background-color:#E4B246;margin:-200px 20px 200px 10px;font-size:25px;width:1400px}
+    #question4{background-color:#E4B246;margin:-200px 20px 200px 10px;font-size:25px;width:1400px}
+    #question5{background-color:#E4B246;margin:-200px 20px 200px 10px;font-size:25px;width:1400px}
+    #question6{background-color:#E4B246;margin:-200px 20px 200px 10px;font-size:25px;width:1400px} 
+    #answer{margin:-150px 20px 200px 10px;display:none;font-size:25px}
+    #answer2{margin:-150px 20px 200px 10px;display:none;font-size:25px}
+    #answer3{margin:-150px 20px 200px 10px;display:none;font-size:25px}
+    #answer4{margin:-150px 20px 200px 10px;display:none;font-size:25px}
+    #answer5{margin:-150px 20px 200px 10px;display:none;font-size:25px}
+    #answer6{margin:-150px 20px 200px 10px;display:none;font-size:25px}  
+    #btn1{width:120px;height:70px}
+    #btn2{width:120px;height:70px}
+    #btn3{width:120px;height:70px}
+    #btn4{width:120px;height:70px}
+    #btn5{width:120px;height:70px}
+    #btn6{width:120px;height:70px}
+    #btn7{width:120px;height:70px}
+    #btn8{width:120px;height:70px}
+    #btn9{width:120px;height:70px}    
+    #last{height:400px;color:white;background-color:#E4B246} 
+    /* #homepagediv{width:90px;margin:50px 20px 200px 300px} */
+    /* #tracediv{width:120px;margin:-420px 20px 200px 620px}  */
+    /* #morediv{width:150px;margin:-335px 20px 200px 950px} */
+    #change{margin:-100px 20px 10px -120px}
+    #change1{margin:-450px 20px 10px 500px}
+    #img01 {
+        width:750px;
+        height:500px;
+    }
+    #img001 {
+        width:750px;
+        height:500px;
+    }    
+#last1 {
+    position:absolute;
+    left:500px;
+    top:5800px;
+    line-height: 28px;
+    font-size:20px;
+}
+#last1 a {
+    text-decoration: none;    
+    color:white;
+}
+#last1 li {
+    list-style-type:none;
+}
+#last2 {
+    position:absolute;
+    left:700px;
+    top:5800px;
+    line-height: 28px;
+    font-size:20px;
+}
+#last2 a {
+    text-decoration: none;    
+    color:white;
+}
+#last2 li {
+    list-style-type:none;
+}
+#last3 {
+    position:absolute;
+    left:900px;
+    top:5800px;
+    line-height: 28px;
+    font-size:20px;
+}
+#last3 a {
+    text-decoration: none;    
+    color:white;
+}
+#last3 li {
+    list-style-type:none;
+}
+#all {
+    margin:0px 0px 0px 50px
+}
+#aaaa {
+    margin:0px 0px 0px 20px
+}
+#youaskcontent {
+    margin: 0px 0px 0px 60px
+}
+h1 {
+    margin:0px 0px 0px 60px
+}
+/* #top ul li .owrap{
+    position:absolute;
+    width:150px;
+    display:none;
+    background-color: #E4B246;
+    text-align:left
+} 
+#top ul li:hover .owrap{
+    display:block 
+} */
+    </style>
+    <script type="text/javascript">
+    function get_num_2(num)
+    {
+        document.getElementById('img01').src = "https://i.imgur.com/"+num+".png";
+    }
+    function get_num_3(num)
+    {
+        document.getElementById('img001').src = "https://i.imgur.com/"+num+".png";
+    }
+    function get_num(num)
+    {
+        document.getElementById('img').src = "https://i.imgur.com/"+num+".jpg";
+    }
+    function show_content()
+    {
+        var yes = document.getElementById('yesprintdiv');
+        var content = document.getElementById('content');
+        if (content.style.display === 'none')
+        {
+            content.style.display = 'block';
+        } 
+        else 
+        {
+            content.style.display = 'none';
+        }
+    }
+    function show_content2()
+    {
+        var ni = document.getElementById('noprintdiv');
+        var content2 = document.getElementById('content2');
+        if (content2.style.display === 'none')
+        {
+            content2.style.display = 'block';
+        } 
+        else 
+        {
+            content2.style.display = 'none';
+        }
+    }
+    function show_content3()
+        {
+            var or = document.getElementById('organfamdiv');
+            var content3 = document.getElementById('content3');
+            if (content3.style.display === 'none')
+            {
+                content3.style.display = 'block';
+            } 
+            else 
+            {
+                content3.style.display = 'none';
+            }
+        }
+        function show_content4()
+        {
+            var te = document.getElementById('teasuediv');
+            var content4 = document.getElementById('content4');
+            if (content4.style.display === 'none')
+            {
+                content4.style.display = 'block';
+            } 
+            else 
+            {
+                content4.style.display = 'none';
+            }
+        }
+    function list1()
+    {
+        var question = document.getElementById('question');
+        var answer = document.getElementById('answer');
+        if (answer.style.display === 'none')
+        {
+            answer.style.display = 'block';
+        } 
+        else 
+        {
+             answer.style.display = 'none';
+        }
+    }
+    function list2()
+    {
+        var question2 = document.getElementById('question2');
+        var answer2 = document.getElementById('answer2');
+        if (answer2.style.display === 'none')
+        {
+            answer2.style.display = 'block';
+        } 
+        else 
+        {
+             answer2.style.display = 'none';
+        }
+    }
+    function list3()
+    {
+        var question3 = document.getElementById('question3');
+        var answer3 = document.getElementById('answer3');
+        if (answer3.style.display === 'none')
+        {
+            answer3.style.display = 'block';
+        } 
+        else 
+        {
+             answer3.style.display = 'none';
+        }
+    }
+    function list4()
+    {
+        var question4 = document.getElementById('question4');
+        var answer4 = document.getElementById('answer4');
+        if (answer4.style.display === 'none')
+        {
+            answer4.style.display = 'block';
+        } 
+        else 
+        {
+             answer4.style.display = 'none';
+        }
+    }
+    function list4()
+    {
+        var question4 = document.getElementById('question4');
+        var answer4 = document.getElementById('answer4');
+        if (answer4.style.display === 'none')
+        {
+            answer4.style.display = 'block';
+        } 
+        else 
+        {
+             answer4.style.display = 'none';
+        }
+    }
+    function list5()
+    {
+        var question5 = document.getElementById('question5');
+        var answer5 = document.getElementById('answer5');
+        if (answer5.style.display === 'none')
+        {
+            answer5.style.display = 'block';
+        } 
+        else 
+        {
+             answer5.style.display = 'none';
+        }
+    }
+    function list6()
+    {
+        var question6 = document.getElementById('question6');
+        var answer6 = document.getElementById('answer6');
+        if (answer6.style.display === 'none')
+        {
+            answer6.style.display = 'block';
+        } 
+        else 
+        {
+             answer6.style.display = 'none';
+        }
+    }
+    </script>
+    </head>
+    <body> 
+    <div id = "topest"><img src = "https://i.imgur.com/7D4pd4e.png" id = "logo">     
+        <div id = "top">
+            <ul>
+                <li><a href = "test6.html">首頁</a>
+                    <div class = "owrap">
+                        <ol>
+                            <li><a href = "01.html">List1</a></li>
+                            <li><a href = "02.html">List2</a></li>
+                            <li><a href = "03.html">List3</a></li>
+                            <li><a href = "04.html">List4</a></li>
+                            <li><a href = "05.html">List5</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li><a href = "medical.html">預立醫療</a>
+                    <div class = "owrap">
+                            <ol>
+                                <li><a href = "home.html">病主法</a></li>
+                                <li><a href = "18.html">五種臨床條件</a></li>
+                                <li><a href = "demo.html">你可以找誰陪同</a></li>
+                                <li><a href = "1.html">預立醫療諮商</a></li>
+                            </ol>
+                        </div> 
+                </li>
+                <li><a href = "organ.html">器官捐贈</a>
+                </li>
+                <li><a href = "a.html">預立遺囑</a></li>
+            </ul>
+        </div>
+    </div>  
+    <br/>  
+    <div id = "pic">
+        <img src = "https://i.imgur.com/5wklDva.png" id = "img">
+    </div>
+    <div id = "button">
+        <button onclick = "get_num('5wklDva')"><img src = "https://i.imgur.com/5wklDva.png" id = "btn1"></button>
+        <button onclick = "get_num('d32Qxme')"><img src = "https://i.imgur.com/d32Qxme.png" id = "btn2"></button>
+        <button onclick = "get_num('Dg3hrFR')"><img src = "https://i.imgur.com/Dg3hrFR.png" id = "btn3"></button>
+        <button onclick = "get_num('xdj07iL')"><img src = "https://i.imgur.com/xdj07iL.png" id = "btn4"></button>
+        <button onclick = "get_num('Mee0FrX')"><img src = "https://i.imgur.com/Mee0FrX.png" id = "btn5"></button>
+        <button onclick = "get_num('H4xeQhJ')"><img src = "https://i.imgur.com/H4xeQhJ.png" id = "btn6"></button>
+        <button onclick = "get_num('rLFAVRA')"><img src = "https://i.imgur.com/rLFAVRA.png" id = "btn7"></button>
+        <button onclick = "get_num('KyrvaIP')"><img src = "https://i.imgur.com/KyrvaIP.png" id = "btn8"></button>
+        <button onclick = "get_num('AfQ2lBe')"><img src = "https://i.imgur.com/AfQ2lBe.png" id = "btn9"></button>
+    </div> 
+    <br/>
+    <div id = "line1">
+        <img src = "https://i.imgur.com/AVNaskh.png" id = "linepic1">
+    </div>
+    <br/>
+    <div id = "p1">
+        <p1>有人說，汽車的零件壞了，就要修理，修理不好就換一個零件，直到好才能繼續上路，而人就像汽車，器官就是零件。
+            10135，這是台灣目前正在等待器官捐贈的人，但你只會看到數字逐年不斷的上升不會下降，因為捐贈的、配對成功的遠不及需要的、病發的。
+        有些人因為遺傳需要洗腎、換腎；有些人不菸不酒作息正常卻被診斷出肝衰竭；有些人心臟生病像是衰竭或罹患心肌症；有些人則是失去了觀看這個世界的視力，他們就像壞了零件的汽車，每天都在等，等著零件的替換好可以重新他們的旅程。
+        衛福部於2018年10月1日開始施行「人體器官移植分配及管理辦法」，也就是有器官捐贈者的配偶或三親等內血親需要器官移植時，他們可以優先獲得器官捐贈的機會，需多家庭因此而受益，器官捐贈不再只是遺愛人間，更是留給家人無價的健康保障及希望，
+        不但能幫助其他家庭，同時也能庇佑到自己的家人。人生在世有捨有得，每個人的生命也都有結束的一天，為何不將用不到的器官捐贈出去，拯救一個或數個生命，讓我們的生命再延續，也讓生命的結束變得更有意義!! 
+    </div>
+    <br/>
+    <div id="all">
+        <div id = "grl">
+            <img src = "https://i.imgur.com/ahVsGj3.png" id = "girl">
+        </div>
+        <div id = "od1">
+            <img src = "https://i.imgur.com/kQTS7rB.png" id = "od1pic">
+        </div>
+        <div id = "eye">
+            <a href = "#"><img src = "https://i.imgur.com/jSGwrHf.png" id = "eyepic"></a>
+        </div>
+        <div id = "eyep">
+            <p>眼角膜</p>
+        </div>
+        <div id = "od2">
+                <img src = "https://i.imgur.com/kQTS7rB.png" id = "od2pic">
+            </div>
+            <div id = "kidney">
+                    <a href = "#"><img src = "https://i.imgur.com/zh8bUbl.png" id = "kidneypic"></a>
+            </div>
+            <div id = "kidneyp">
+                <p>腎臟</p>
+            </div>
+            <div id = "od3">
+                    <img src = "https://i.imgur.com/kQTS7rB.png" id = "od3pic">
+                </div>
+                <div id = "pancreas">
+                        <a href = "#"><img src = "https://i.imgur.com/hR3SZYq.png" id = "pancreaspic"></a>
+                </div>
+                <div id = "pancreasp">
+                    <p>胰臟</p>
+                </div>
+                <div id = "od4">
+                        <img src = "https://i.imgur.com/kQTS7rB.png" id = "od4pic">
+                    </div>
+                    <div id = "intestine">
+                            <a href = "#"><img src = "https://i.imgur.com/1ygWLcV.png" id = "intestinepic"></a>
+                    </div>
+                    <div id = "intestinep">
+                        <p>腸子</p>
+                    </div>
+                    <div id = "od5">
+                            <img src = "https://i.imgur.com/9rDommT.png" id = "od5pic">
+                        </div>
+                        <div id = "heart">
+                                <a href = "#"><img src = "https://i.imgur.com/eoQBI3n.png" id = "heartpic"></a>
+                        </div>
+                        <div id = "heartp">
+                            <p>心臟</p>
+                        </div>
+                        <div id = "od6">
+                                <img src = "https://i.imgur.com/9rDommT.png" id = "od6pic">
+                            </div>
+                            <div id = "lung">
+                                    <a href = "#"><img src = "https://i.imgur.com/fMOScDS.png" id = "lungpic"></a>
+                            </div>
+                            <div id = "lungp">
+                                <p>肺臟</p>
+                            </div>
+                            <div id = "od7">
+                                    <img src = "https://i.imgur.com/5mWqRDQ.png" id = "od7pic">
+                                </div>
+                                <div id = "liver">
+                                        <a href = "#"><img src = "https://i.imgur.com/3wpcNYC.png" id = "liverpic"></a>
+                                </div>
+                                <div id = "liverp">
+                                    <p>肝臟</p>
+                                </div>
+    </div>
+                            <br/>
+                            <div id = "whocan">
+                                <p>誰可以辦理器官捐贈？</p>
+                            </div>
+                            <br/>
+                            <div id = "line2">
+                                    <img src = "https://i.imgur.com/AVNaskh.png" id = "linepic2">
+                                </div>
+                                <br/>
+                                <div id = "p2">
+                                    <p2>器官捐贈並沒有年齡限制，任何人都可以，未滿二十歲的需要監護人簽章，年長一點50-80歲不等也都可以，雖然器官會隨著年齡增長導致功能退化，但只要捐贈者器官狀態健康也是可以捐贈的，且研究證明尤其對於腎臟移植患者來說，接受老年人捐贈腎臟的存活率很高。</p2>
+                                </div>
+                                <br/>
+                                <div id = "when">
+                                        <p>辦理後何時會捐出你的器官？</p>
+                                    </div>
+                                    <br/>
+                                <div id = "line3">
+                                        <img src = "https://i.imgur.com/AVNaskh.png" id = "linepic3">
+                                    </div>
+                                    <br/>
+                                    <div id = "p3">
+                                        <p3>當一個人不幸腦死時，就可以把自己身上良好的器官或組織，以無償的方式，捐贈給器官衰竭急需器官移植的患者。
+                                                
+                                                (給一個分業按鈕) 關於腦死
+                                                腦幹的圖放這裡
+                                                腦死是什麼
+                                                所謂的「腦死」即是生命結束，視同死亡，也就是人體生命中樞「腦幹」，因疾病或外傷因素壞死、衰竭，導致呼吸功能停止、心跳停止及器官逐漸敗壞。
+                                                
+                                                造成腦死的因素
+                                                頭部外傷：例如車禍、墜樓、槍傷等。
+                                                腦部病變：例如原發性腫瘤、顱內出血等。
+                                                其他因素：例如腦部缺氧、心臟麻痺、藥物中毒、溺水等。
+                                                
+                                                小迷思 : 腦死與植物人是一樣的嗎
+                                                植物人是因為腦部疾病或其他系統的疾病合併腦病變，導致大腦功能喪失但腦幹功能正常，可以維持自發性的呼吸、心跳，所以植物人還沒腦死不能捐贈器官。植物人於臨終時，經醫師評估其組織良好，可捐贈骨骼、皮膚、眼角膜、肌腱、心瓣膜等組織。
+                                                </p3>
+                                    </div>    
+                                    <br/>
+                                    <div id = "braindiv">
+                                        <a href = "17.html"><img src = "https://i.imgur.com/6ZTGi1x.png" id = "brainpic"></a>
+                                    </div>
+                                    <div id = "factordiv">
+                                            <a href = "16.html"><img src = "https://i.imgur.com/Dn6lk5V.png" id = "factorpic"></a>
+                                    </div>
+                                    <div id = "equaldiv">
+                                            <a href = "15.html"><img src = "https://i.imgur.com/hBPhNnk.png" id = "equalpic"></a>
+                                    </div>
+                                    <br/><div id = "whocandeal">
+                                            <p>誰可以辦理器官捐贈？</p>
+                                        </div>
+                                        <br/>
+                                    <div id = "line4">
+                                            <img src = "https://i.imgur.com/AVNaskh.png" id = "linepic4">
+                                        </div>
+                                        <br/>
+                                        <div id = "p4">
+                                            <div id="aaaa">
+                                            <p4>
+                                                    器官捐贈並沒有年齡限制，任何人都可以，未滿二十歲的需要監護人簽章，年長一點50-80歲不等也都可以，雖然器官會隨著年齡增長導致功能退化，但只要捐贈者器官狀態健康也是可以捐贈的，且研究證明尤其對於腎臟移植患者來說，接受老年人捐贈腎臟的存活率很高。
+                                                    
+                                            </p4>
+                                            </div>
+                                            <div id = "organfamdiv" onclick = "show_content3()">
+                                                <img src = "https://i.imgur.com/6kmUSIW.png" id = "organfampic">
+                                            </div>
+                                            <div id = "teasuediv" onclick = "show_content4()">
+                                                <img src = "https://i.imgur.com/vs2wZgX.png" id = "teasuepic">
+                                                <br/>
+                                            </div>
+                                            <br/>
+                                            <div id="content3">
+                                                <div id="first">
+                                                    <div id = "change">
+                                                        <img id = "img01" src = "https://i.imgur.com/L8czF5U.png">
+                                                    </div>
+                                                    <br/>
+                                                    <div id = "buttonnn">
+                                                        <button onclick = "get_num_2('L8czF5U')">1</button>
+                                                        <button onclick = "get_num_2('htCShta')">2</button>
+                                                                <!-- <button onclick = "get_num_2('3')">3</button> -->
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                            <div id="content4">
+                                                <div id="secondd">
+                                                    <div id = "change1">
+                                                        <img id = "img001" src = "https://i.imgur.com/k9KY2ia.png">
+                                                    </div>
+                                                    <br/>
+                                                    <div id = "buttonnnn">
+                                                        <button onclick = "get_num_3('k9KY2ia')">1</button>
+                                                        <button onclick = "get_num_3('GuRZwFw')">2</button>
+                                                                        <!-- <button onclick = "get_num_2('3')">3</button> -->
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>    
+                                        <br/>
+                                        <div id = "howcandeal">
+                                                <p>要怎麼辦理器官捐贈呢？</p>
+                                            </div>
+                                            <br/>
+                                        <div id = "line5">
+                                                <img src = "https://i.imgur.com/AVNaskh.png" id = "linepic5">
+                                            </div>
+                                            <br/>
+                                            <div id = "yesprintdiv" onclick = "show_content()">
+                                                <img src = "https://i.imgur.com/rmYd8O8.png" id = "yesprintpic">
+                                            </div>
+                                            <div id = "noprintdiv" onclick = "show_content2()">
+                                                <img src = "https://i.imgur.com/mS4qfNw.png" id = "noprintpic">
+                                            </div>
+                                            <br/>
+                                        <div id = "big">    
+                                            <div id = "content">
+                                                <div id = "1">
+                                                    <p>到「中華民國器官捐贈協會」的網站</p>
+                                                    <p>(https://www.organ.org.tw/Register.aspx )</p>
+                                                </div>
+                                                <div id = "down1">
+                                                    <img src = "https://i.imgur.com/dr9E3eo.png">
+                                                </div>
+                                                <div id = "1">
+                                                    <p>線上填寫後也要列印同意書再填寫一次</p>
+                                                </div>
+                                                <div id = "down1">
+                                                    <img src = "https://i.imgur.com/dr9E3eo.png">
+                                                </div>
+                                                <div id = "1">
+                                                    <p>填寫好後將同意書正本郵寄到中華民國器官捐贈協會</p>
+                                                </div>
+                                                <div id = "down1">
+                                                    <img src = "https://i.imgur.com/dr9E3eo.png">
+                                                </div>
+                                                <div id = "1">
+                                                    <p>協會將會幫你辦理健保IC卡登錄</p>
+                                                </div>
+                                                <div id = "down1">
+                                                    <img src = "https://i.imgur.com/dr9E3eo.png">
+                                                </div>
+                                                <div id = "done">
+                                                        <p>完成</p>
+                                                    </div>
+                                            </div>
+                                            <div id = "content2">
+                                                    <div id = "1">
+                                                            <p>到各大醫院或衛生所的服務窗口索取器官捐贈同意書</p>
+                                                            <p>/ 打電話和器官間贈協會索要，協會會寄給你</p>
+                                                        
+                                                        </div>
+                                                        <div id = "down1">
+                                                            <img src = "https://i.imgur.com/dr9E3eo.png">
+                                                        </div>
+                                                        <div id = "1">
+                                                            <p>填寫好後將同意書正本郵寄到中華民國器官捐贈協會</p>
+                                                        </div>
+                                                        <div id = "down1">
+                                                            <img src = "https://i.imgur.com/dr9E3eo.png">
+                                                        </div>
+                                                        <div id = "1">
+                                                            <p>協會將會幫你辦理健保IC卡登錄</p>
+                                                        </div>
+                                                        <div id = "down1">
+                                                            <img src = "https://i.imgur.com/dr9E3eo.png">
+                                                        </div>
+                                                        <div id = "done">
+                                                                <p>完成</p>
+                                                            </div>
+                                            </div>
+                                        </div>
+                                        <br/>
+                                        <div id = "youaskdiv">
+                                            <img src = "https://i.imgur.com/d2TUAFC.png" id = "youaskpic">
+                                        </div>
+                                        </div>    
+                                        <br/>
+                                        <div id = "youaskcontent">
+                                        <div id = "question" onclick = "list1()" border = "5px solid black">
+                                                <p>Q：如果不想捐出所有器官，可以只捐一個器官嗎？
+                                                    </p>
+                                            </div>
+                                            <div id = "answer" display = "none">
+                                                <p>A：當然可以指定自己想捐出的器官種類，醫院會尊重每一個人的意願。
+                                                    </p>
+                                            </div>
+                                            <br/>
+                                            <div id = "question2" onclick = "list2()" border = "5px solid black">
+                                                    <p>Q：若我簽署器官捐贈，會不會影響我的醫療照護品質（醫生會對我見死不救只為我的器官嗎！）</p>
+                                                </div>
+                                                <div id = "answer2" display = "none">
+                                                    <p>A：不會！送醫時，該有的醫療程序都不會因為器官捐贈而有所改變，等醫療措施都無效時，才會徵詢器官捐贈意願，並在宣告腦死或死亡後進行器官捐贈。
+                                                            
+                                                        </p>
+                                                </div>
+                                                <br/>
+                                                <div id = "question3" onclick = "list3()" border = "5px solid black">
+                                                        <p>Q：我簽了器官捐贈同意書後，一定會捐成功嗎？
+                                                                
+                                                            </p>
+                                                    </div>
+                                                    <div id = "answer3" display = "none">
+                                                        <p>A：不一定，一般來說，僅在腦死的狀況下，才得施行器官捐贈(腦死佔所有死亡人數的1%)。且法律表示，除了捐贈者本身的意願外，也要取得兩位捐贈者家屬的同意書，始得進行器官捐贈。
+                                                                
+                                                            </p>
+                                                    </div>
+                                                    <br/>
+                                                    <div id = "question4" onclick = "list4()" border = "5px solid black">
+                                                            <p>Q：我捐贈的器官是否會被良好的運用（醫生會不會轉手賣我的器官大賺一筆！）</p>
+                                                            
+                                                        </div>
+                                                        <div id = "answer4" display = "none">
+                                                            <p>A：當然！我國有一套統整的登錄及分配資訊系統，與全國等候者與捐贈者進行登陸與配對，因此一定會經由此系統提供最合適對受贈者。根據「人體器官移植條例」第十二條規定：「提供移植之器官，應以無償捐贈方式為之」，器官是出於愛心的捐贈，絕不能有任何交易行為，違反第十二條而從事器官買賣者，可處六個月以上、五年以下有期徒刑。另外，第十八條規定：「以廣告物、出版品、廣播、電視、電子訊號、電腦網路或其他媒體，散佈、播送或刊登，促使人為器官買賣訊息者，處新台幣九萬元以上、四十五萬元以下罰鍰。」
+                                                                    
+                                                                </p>
+                                                        </div>
+                                                        <br/>
+                                                        <div id = "question5" onclick = "list5()" border = "5px solid black">
+                                                                <p>Q：器官捐贈手術時會痛嗎？不痛為什麼要麻醉?
+                                                                    </p>
+                                                                
+                                                            </div>
+                                                            <div id = "answer5" display = "none">
+                                                                <p>A：器官捐贈者一定是經由判定腦死後才會開始手術，腦幹死亡後是沒有知覺的因此不會痛，但為了防止遺體不自主神經的顫動會影響受術，因此手術過程中，全程都會有麻醉科參與，麻醉藥物都是照正常手術一樣的來給予，並不會因為是捐贈手術而偷工減料。
+                                                                        
+                                                                        
+                                                                    </p>
+                                                            </div>
+                                                            <br/>
+                                                            <div id = "question6" onclick = "list6()" border = "5px solid black">
+                                                                    <p>Q：器官捐贈後，遺體外觀和喪禮會不會受影響？（會不會變怪醫黑傑克一樣一塊一塊的！）</p>
+                                                                    
+                                                                </div>
+                                                                <div id = "answer6" display = "none">
+                                                                    <p>A：不會！手術時是採用外科手術標準，不會因為是器官捐贈而有所不同，外科手術後都會仔細縫合並維護外觀。
+                                                                            
+                                                                            
+                                                                        </p>
+                                                                </div>
+                                                                <br/>
+                                                                <!-- <div id = "last">
+                                                                    <div id = "homepagediv">
+                                                                        <p><a href = "#">首頁</a></p>
+                                                                        <hr/>
+                                                                        <p><a href = "#">代辦小便條</a></p>
+                                                                        <p><a href = "#">代辦事項一</a></p>
+                                                                        <p><a href = "#">代辦事項二</a></p>
+                                                                        <p><a href = "#">代辦事項三</a></p>                                                  
+                                                                    </div>
+                                                                    <div id = "tracediv">
+                                                                            <p><a href = "#">追蹤待辦事項</a></p>
+                                                                            <hr/>
+                                                                            <p><a href = "#">臉書</a></p>
+                                                                            <p><a href = "#">Instagram</a></p>                                               
+                                                                    </div>
+                                                                    <div id = "morediv">
+                                                                            <p><a href = "#">更多相關網站</a></p>
+                                                                            <hr/>
+                                                                            <p><a href = "#">衛生福利部</a></p>
+                                                                            <p><a href = "#">中華器官捐贈協會</a></p>
+                                                                            <p><a href = "#">安寧照顧基金會</a></p>
+                                                                            <p><a href = "#">生命咖啡館</a></p>                                               
+                                                                    </div>        
+                                                                </div> -->
+                                        </div>
+                                                                <h1 style="background-color: #E4B246; width:1400px; height: 300px"></h1>
+                                                                <div id="b">
+                                                                    <div id="last1">  
+                                                                        <li style="text-align: left;"><a href = "#">首頁</a>
+                                                                            <hr size=0.5px color=white>
+                                                                            <div class = "owrap">
+                                                                                <ol>
+                                                                                    <li style="font-size:15px; font-weight:bold"><a href="#"></a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">代辦小便條</a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">代辦事項一</a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">代辦事項二</a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">代辦事項三</a></li>
+                                                                                    </ol>
+                                                                                </div>   
+                                                                        </li>
+                                                                    </div>
+                                                                    <div id="last2">  
+                                                                        <li style="text-align: left;"><a href = "#">追蹤代辦事項</a>
+                                                                            <hr size=0.5px color=white>
+                                                                            <div class = "owrap">
+                                                                                <ol>
+                                                                                    <li style="font-size:15px; font-weight:bold"><a href="#"></a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">臉書</a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">Instagram</a></li>
+                                        
+                                                                                    </ol>
+                                                                                </div>   
+                                                                        </li>
+                                                                    </div>
+                                                                    <div id="last3">  
+                                                                        <li style="text-align: left;"><a href = "#">更多相關網站</a>
+                                                                            <hr size=0.5px color=white>
+                                                                            <div class = "owrap">
+                                                                                <ol>
+                                                                                    <li style="font-size:15px; font-weight:bold"><a href="#"></a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">衛生福利部</a></li>
+                                                                                    <!-- <hr size=0.5px color=white> -->
+                                                                                    <li><a href="#">中華器官捐贈協會</a></li>
+                                                                                    <li><a href="#">安寧照護基金會</a></li>
+                                                                                    <li><a href="#">生命咖啡館</a></li>
+                                                                                    </ol>
+                                                                                </div>   
+                                                                        </li>
+                                                                    </div>
+                                                                </div>
+                                                    </div>
+                                                    <br/>
+                                                    
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>網頁標題</title>
+<!-- <link href="mycss.css" rel="stylesheet" type="text/css" /> -->
+<style type="text/css">
+body {
+    background-image:url('123.gif');
+}
+#top{
+    position:absolute;
+    left:250px;
+    top:30px
+}
+ul,ol{
+    margin:0px;
+    padding:0px;
+    list-style-type: none
+}
+#top{
+    width:1000px;
+    height: 50px;
+}
+#top ul li{
+  float:left;
+  line-height:40px;
+  /* padding:0px 15px; */
+  /* background-color: #ebb946; */
+  position:relative;
+  padding-left: 150px;
+  /* padding-top: 10px; */
+}
+#top ul li .owrap{
+    position:absolute;
+    width:150px;
+    display:none;
+    background-color: #E4B246;
+    text-align:left
+}
+#top ul li ol li{
+    float:none;
+    line-height:40px;
+    padding-left: 5px;
+    width: 85px;
+}
+#top ul li:hover .owrap{
+    display:block 
+}
+a{
+    color:white;
+    font-size:20px;
+    text-decoration: none
+}
+a:hover{
+    color:white
+}
+
+#topest{
+    background-color:#E4B246;
+    position:absolute;
+    width:100%;
+    height:100px;
+    top:0px;
+    left:0px
+}
+#logo{
+    width:200px;
+    height:100px
+}
+/* 
+#img2 {
+    padding-left: 50px;
+    padding-bottom: 300px;
+}
+#img3 {
+    padding-left: 1050px;
+    padding-top: 0px;
+} */
+#img1 {
+    padding-top: 200px;
+    left: 0px;
+    /* position:absolute; */
+    /* padding-bottom: 0px; */
+    /* bottom: 0px; */
+    /* display:block; */
+    /* vertical-align:bottom; */
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+#img2 {
+    position:absolute;
+    top:-34px;
+    left: -75px;
+    z-index:-1;
+    /* display:block; */
+    /* left:100px;top:1700px;width:auto; */
+    /* bottom:0; */
+}
+#img3 {
+    position:absolute;
+    top:-35px;
+    left: -90px;
+    z-index:-1;
+    /* left:100px;top:1700px;width:auto; */
+    /* bottom:0; */
+}
+#img4 {
+    position:absolute;
+    top:-45px;
+    left: -90px;
+    z-index:-1;
+    /* left:100px;top:1700px;width:auto; */
+    /* bottom: 0; */
+}
+#img5 {
+    position:absolute;
+    top:480px;
+    left:650px;
+    width:100px;
+    height:40px;
+}
+#img6 {
+    position:absolute;
+    top:300px;
+    left:460px;
+    width:100px;
+    height:40px;
+}
+#img7 {
+    position:absolute;
+    top:380px;
+    left:150px;
+    width:100px;
+    height:40px;
+}
+#img8 {
+    position:absolute;
+    top:405px;
+    left:410px;
+    width:100px;
+    height:40px;
+}
+#img9 {
+    position:absolute;
+    top:520px;
+    left:290px;
+    width:100px;
+    height:40px;
+}
+/* #logo{
+    width:200px;height:100px
+} */
+.sticker {
+    
+    position:absolute;
+    top:230px;
+    left:1100px;
+        height:60px; width:200px;
+        /* -moz-box-shadow: 0 0 5px #888; */
+        /* -webkit-box-shadow: 0 0 5px#888; */
+        /* box-shadow: 0 0 5px #888; */
+        /* background-color:#FFFFBB; */
+        padding: 2px;
+}
+.sticker:hover {
+    /* z-index:0; */
+        text-decoration: none;
+        
+        background-color:rgb(242,222,178,0.5);
+}
+.sticker1 {
+    
+    position:absolute;
+    top:400px;
+    left:1130px;
+        height:60px; width:180px;
+        /* -moz-box-shadow: 0 0 5px #888; */
+        /* -webkit-box-shadow: 0 0 5px#888; */
+        /* box-shadow: 0 0 5px #888; */
+        /* background-color:#FFFFBB; */
+        padding: 2px;
+}
+.sticker1:hover {
+    /* z-index:0; */
+        text-decoration: none;
+        
+        background-color:rgb(242,222,178,0.5);
+}
+.sticker2 {
+    
+    position:absolute;
+    top:600px;
+    left:1130px;
+        height:60px; width:180px;
+        /* -moz-box-shadow: 0 0 5px #888; */
+        /* -webkit-box-shadow: 0 0 5px#888; */
+        /* box-shadow: 0 0 5px #888; */
+        /* background-color:#FFFFBB; */
+        padding: 2px;
+}
+.sticker2:hover {
+    /* z-index:0; */
+        text-decoration: none;
+        
+        background-color:rgb(242,222,178,0.5);
+}
+p {
+    position:absolute;
+    left:1050px;
+    top:165px;
+}
+</style>
+<script>
+        function over(imgObj,picname) { imgObj.src=picname; } 
+        function out(imgObj,picname) { imgObj.src=picname; } 
+    </script>
+</head>
+<body>
+    <div id = "topest"><img src = "https://i.imgur.com/wEk6wmn.png" id = "logo">     
+        <div id = "top">
+            <ul>
+                <li><a href = "#">代辦事項一</a>
+                    <div class = "owrap">
+                        <ol>
+                            <li style="font-size:15px; font-weight:bold"><a href="medical.html">預立醫療</a></li>
+                            <!-- <hr size=0.5px color=none> -->
+                            <li><a href="medical.html#t">小故事</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="medical.html#what">什麼是預立醫療</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="medical.html#hos">如何簽署</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="medical.html#buttom">常見QA</a></li>
+                        </ol>
+                    </div>
+                </li>
+                <li><a href = "#">代辦事項二</a>
+                    <div class = "owrap">
+                        <ol>
+                            <li style="font-size:15px; font-weight:bold"><a href="#">器官捐贈</a></li>
+                            <!-- <hr size=0.5px color=white> -->
+                            <li><a href="organ.html">小故事</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="#">誰可以捐贈</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="#">什麼器官可以捐贈</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="#">如何辦理器官捐贈</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="#">常見QA</a></li>
+                            </ol>
+                        </div> 
+                </li>
+                <li><a href = "#">代辦事項三</a>
+                    <div class = "owrap">
+                        <ol>
+                            <li style="font-size:15px; font-weight:bold"><a href="#">預立遺囑</a></li>
+                            <!-- <hr size=0.5px color=white> -->
+                            <li><a href="#">小故事</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="#">遺囑包含什麼內容</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="#">如何生效</a></li>
+                            <hr size=0.5px color=white>
+                            <li><a href="#">常見QA</a></li>
+                            </ol>
+                        </div> 
+                </li>
+            </ul>
+        </div>
+    </div>  
+    <br/> 
+   
+<img id="img1" src="https://i.imgur.com/Mu8EUT7.png" alt="主頁"  title="首頁" width="1000" height="500"/>
+<div class="sticker">
+<img  id="img2" src="https://i.imgur.com/DvNvwvR.png" alt="主頁"  title="首頁" width="350" height="140"/>
+</div>
+<div class="sticker1">
+<img  id="img3" src="https://i.imgur.com/wn2C1v8.png" alt="主頁"  title="首頁" width="350" height="140"/>
+</div>
+<div class="sticker2">
+<img  id="img4" src="https://i.imgur.com/edARsFr.png" alt="主頁"  title="首頁" width="350" height="140"/>
+</div>
+
+<!-- <img  id="" src="" alt=""  title="" width="100" height="40"/> -->
+<table id="aaa">
+        <tr>
+            <td><a href="one.html"><img id="img5" onmouseover="over(this,'https://i.imgur.com/apn6Kue.png')" onmouseout="out(this,'https://i.imgur.com/t0uLYdM.png')" src= "https://i.imgur.com/t0uLYdM.png" style="cursor:hand"></a></td>
+            <td><a href="two.html"><img id="img6" onmouseover="over(this,'https://i.imgur.com/A8JV6W6.png')" onmouseout="out(this,'https://i.imgur.com/t0uLYdM.png')" src= "https://i.imgur.com/t0uLYdM.png" style="cursor:hand"></a></td>
+            <td><a href="three.html"><img id="img7" onmouseover="over(this,'https://i.imgur.com/fpz5Q5N.png')" onmouseout="out(this,'https://i.imgur.com/t0uLYdM.png')" src= "https://i.imgur.com/t0uLYdM.png" style="cursor:hand"></a></td>
+            <td><a href="four.html"><img id="img8" onmouseover="over(this,'https://i.imgur.com/byMhdlO.png')" onmouseout="out(this,'https://i.imgur.com/t0uLYdM.png')" src= "https://i.imgur.com/t0uLYdM.png" style="cursor:hand"></a></td>
+            <td><a href="five.html"><img id="img9" onmouseover="over(this,'https://i.imgur.com/MRDX9mi.png')" onmouseout="out(this,'https://i.imgur.com/t0uLYdM.png')" src= "https://i.imgur.com/t0uLYdM.png" style="cursor:hand"></a></td>
+        </tr>
+        </table>
+</body>
+<p>你人生中必備的代辦事項...</p>
+
+</html>
